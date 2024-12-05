@@ -15,8 +15,8 @@ class solution:
   def twoSum(self, nums: List[int], target: int) -> List[int]:
     pair_index = {}
     
-  for index, num in nums:
-    if target-num in nums:
-      return [index, pair_index[target-num]]
-      pair_index[num] = index
+    for index, num in nums:
+      if target-num in nums:
+        return [index, pair_index[target-num]]
+        pair_index[num] = index
 
